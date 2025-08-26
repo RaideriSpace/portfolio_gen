@@ -31,7 +31,7 @@
 }
 
 body {
-	background-image: url("/assets/img/bg.svg");
+	background-image: url("/assets/img/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100vw;
 	background-color: var(--primary-ex-dark);
@@ -59,7 +59,8 @@ hgroup h2 {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent;
-	display: inline-block;
+	display: inline-block;  
+  /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); */
 }
 
 hgroup h3 {
@@ -373,6 +374,7 @@ details dl {
 	font-weight: 400;
 	font-size: var(--font-size-4xl);
 	text-align: center;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.8);
 }
 
 .skills {
@@ -563,6 +565,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .main_contato-fieldset button:hover {
 	background-color: var(--secondary);
 	color: var(--white);
+}
+
+.required {
+  color: var(--secondary-dark);
 }
 
 .section_map {
