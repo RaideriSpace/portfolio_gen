@@ -271,6 +271,13 @@ details dl {
 	width: 45%;
 }
 
+#errNome, #errEmail, #errSubject {
+  margin: var(--spacing-1) var(--spacing-2) var(--spacing-3);
+  color: var(--alert);
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+}
+
 /* ========================================
   * 3- Classes
   * ========================================
@@ -512,6 +519,10 @@ details dl {
 .main_contato-fieldset input:-webkit-autofill:active {
 	-webkit-box-shadow: 0 0 0 30px var(--primary-ex-dark) inset;
 	-webkit-text-fill-color: var(--white);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 
 .main_contato-fieldset textarea {
