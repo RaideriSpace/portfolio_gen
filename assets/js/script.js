@@ -37,7 +37,7 @@ formulario.addEventListener("submit", function (event) {
 	}
 
 	const campoMessage = document.querySelector("#message");
-	window.alert("Obrigado pelo seu e-mail! Retornarei em contato em breve!");
+	window.alert("Obrigado pelo seu e-mail! Retornarei o contato em breve!");
 
 	campoNome.value = "";
 	campoEmail.value = "";
