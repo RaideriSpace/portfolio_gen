@@ -12,17 +12,19 @@ O objetivo é criar uma página **moderna, responsiva e acessível**, servindo c
 
 ## ✨ Funcionalidades
 
-* Página inicial com informações sobre mim e minhas formações.
-* Seção de **projetos** com links diretos para os repositórios no GitHub.
-* Página de **contato** com formulário e integração ao **Google Maps**.
-* Layout responsivo, com design pensado em **UX/UI**.
-* Estilização com **variáveis CSS** e design system próprio.
+- **Homepage** (`index.html`): resumo pessoal, habilidades e formação acadêmica.  
+- **Projetos** (`projetos.html`): lista de projetos hospedados no GitHub, com links diretos.  
+- **Contato** (`contato.html`): formulário funcional e responsivo para envio de mensagens.  
+- **Layout responsivo**: uso de `flexbox`, `grid` e ajustes para diferentes tamanhos de tela.  
+- **Dark Theme futurista**: uso de gradientes, bordas neon e efeitos de hover.  
+- **Semântica HTML5**: uso de `<header>`, `<main>`, `<aside>`, `<details>`, `<summary>` e `<fieldset>`.
+
 
 
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5** → Estrutura e semântica do site.
-* **CSS3** → Estilização, variáveis globais e responsividade.
+* **CSS3** → Estilização, animações, variáveis globais e responsividade.
 * **JavaScript (ES6+)** → Interatividade e manipulação do DOM.
 * **Git & GitHub Pages** → Versionamento e deploy.
 * **Figma** → Planejamento do layout e prototipagem.
@@ -55,11 +57,11 @@ O objetivo é criar uma página **moderna, responsiva e acessível**, servindo c
 4. Inicie o projeto com o **Live Server** (clique direito em `index.html` → *Open with Live Server*).
 
 
-<!-- ## 🌍 Deploy
+## 🌍 Deploy
 
 O site está disponível publicamente pelo **GitHub Pages**:
 
-👉 [Acesse aqui meu Portfólio](https://raiderispace.github.io/seu-repositorio) -->
+👉 [Acesse aqui meu Portfólio](https://raiderispace.github.io/portfolio_gen/)
 
 
 ## 📂 Estrutura do Projeto
