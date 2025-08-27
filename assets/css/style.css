@@ -59,8 +59,8 @@ hgroup h2 {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent;
-	display: inline-block;  
-  /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); */
+	display: inline-block;
+	/* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8); */
 }
 
 hgroup h3 {
@@ -75,6 +75,8 @@ hgroup hr {
 }
 
 blockquote {
+  display: flex;
+  flex-direction: column;
 	margin: var(--spacing-6) 0;
 	padding: var(--spacing-4);
 	border-left: 4px solid var(--tertiary-dark);
@@ -87,8 +89,8 @@ blockquote {
 	cursor: default;
 }
 
-blockquote footer {
-	text-align: end;
+blockquote cite {
+  align-self: end;
 	font-size: var(--font-size-sm);
 	font-style: normal;
 	color: var(--white);
@@ -99,7 +101,7 @@ blockquote:hover {
 	color: var(--secondary);
 }
 
-blockquote:hover footer {
+blockquote:hover cite {
 	color: var(--tertiary);
 }
 
@@ -272,11 +274,13 @@ details dl {
 	width: 45%;
 }
 
-#errNome, #errEmail, #errSubject {
-  margin: var(--spacing-1) var(--spacing-2) var(--spacing-3);
-  color: var(--alert);
-  font-size: var(--font-size-sm);
-  font-weight: bold;
+#errNome,
+#errEmail,
+#errSubject {
+	margin: var(--spacing-1) var(--spacing-2) var(--spacing-3);
+	color: var(--alert);
+	font-size: var(--font-size-sm);
+	font-weight: bold;
 }
 
 /* ========================================
@@ -334,7 +338,7 @@ details dl {
 
 .navbar_links li {
 	padding: var(--spacing-2) var(--spacing-4);
-  text-align: center;
+	text-align: center;
 }
 
 .navbar_links a {
@@ -374,7 +378,7 @@ details dl {
 	font-weight: 400;
 	font-size: var(--font-size-4xl);
 	text-align: center;
-  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.8);
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.8);
 }
 
 .skills {
@@ -524,7 +528,7 @@ details dl {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+	filter: invert(1);
 }
 
 .main_contato-fieldset textarea {
@@ -568,7 +572,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .required {
-  color: var(--secondary-dark);
+	color: var(--secondary-dark);
 }
 
 .section_map {
@@ -669,14 +673,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 580px) {
-	.content {
-		flex-direction: column;
+	body {
+		margin: 0 var(--spacing-3);
 	}
 
+  blockquote cite {
+    margin-top: var(--spacing-4);
+  }
+
 	#sidebar {
-		width: 80vw;
+		width: 100%;
 		border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-		padding: var(--spacing-1);
+		padding: var(--spacing-3);
 	}
 
 	#sidebar img {
@@ -684,10 +692,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	}
 
 	#main {
-		width: 80vw;
-		padding: var(--spacing-2);
+		width: 100%;
+		padding: var(--spacing-3);
 		border-radius: 0 0 var(--radius-xl) var(--radius-xl);
 		font-size: var(--font-size-sm);
+	}
+
+	.content {
+		align-items: center;
+		flex-direction: column;
 	}
 
 	.formacao {
@@ -699,6 +712,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	.main {
 		justify-content: center;
 		align-items: center;
+		width: fit-content;
 	}
 
 	.main_contato {
